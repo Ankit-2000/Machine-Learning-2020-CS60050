@@ -1,0 +1,83 @@
+Bagde Ankit  - 17CS30009
+Machine learning - Assignment 2
+
+
+"data" folder contains the required csv files
+"src"  folder contains the required python files
+
+Running the files  - python3 file.py
+
+Task 1 - (task1.py)
+Generates dataset_A.csv and dataset_B.csv for task 2 and task 3, saving them in "data" folder
+
+Task 2 - (task2.py)
+Implementing logistic regression and comparing with sci-kit learn logistic regression
+
+Output - 
+
+------ Average -------
+
+Our implementation of LR      ->  Accuracy  ::  0.86617    precision  ::  0.53509    Recall  ::  0.18094
+
+Sci-kit learn implementation  ->  Accuracy  ::  0.87179    precision  ::  0.55132    Recall  ::  0.32166
+
+
+
+Each fold output - 
+
+------ Fold - 1 -------
+
+Our implementation of LR      ->  Accuracy  ::  0.87805    precision  ::  0.47368    Recall  ::  0.28571
+
+Sci-kit learn implementation  ->  Accuracy  ::  0.88180    precision  ::  0.50000    Recall  ::  0.44444
+
+
+------ Fold - 2 -------
+
+Our implementation of LR      ->  Accuracy  ::  0.84991    precision  ::  0.63158    Recall  ::  0.14118
+
+Sci-kit learn implementation  ->  Accuracy  ::  0.87242    precision  ::  0.72973    Recall  ::  0.31765
+
+
+------ Fold - 3 -------
+
+Our implementation of LR      ->  Accuracy  ::  0.87054    precision  ::  0.50000    Recall  ::  0.11594
+
+Sci-kit learn implementation  ->  Accuracy  ::  0.86116    precision  ::  0.42424    Recall  ::  0.20290
+
+
+Task 3 - (task3.py)
+Implementing Decision Tree using ID3 algo and comparing with sci-kit learn decision tree
+tree can be printed using pprint.pprint(tree) 
+
+Output - 
+
+------ Average -------
+
+Our implementation of Decision Tree  ->  Accuracy  ::  0.78487    precision  ::  0.48197    Recall  ::  0.42714
+
+Sci-kit learn implementation         ->  Accuracy  ::  0.78799    precision  ::  0.48460    Recall  ::  0.42469
+
+
+
+Each fold output - 
+
+------ Fold - 1 -------
+
+Our implementation of Decision Tree  ->  Accuracy  ::  0.78236    precision  ::  0.47525    Recall  ::  0.45824
+
+Sci-kit learn implementation         ->  Accuracy  ::  0.78236    precision  ::  0.50193    Recall  ::  0.45215
+
+
+------ Fold - 2 -------
+
+Our implementation of Decision Tree  ->  Accuracy  ::  0.75985    precision  ::  0.45784    Recall  ::  0.42054
+
+Sci-kit learn implementation         ->  Accuracy  ::  0.77111    precision  ::  0.47464    Recall  ::  0.40634
+
+
+------ Fold - 3 -------
+
+Our implementation of Decision Tree  ->  Accuracy  ::  0.81238    precision  ::  0.51281    Recall  ::  0.40264
+
+Sci-kit learn implementation         ->  Accuracy  ::  0.81051    precision  ::  0.47724    Recall  ::  0.41558

@@ -1,0 +1,84 @@
+Assignment 1 : Machine Learning
+
+Name - Bagde Ankit
+Roll no - 17CS30009
+
+----------  Part 1  -------------
+
+Train data size is (1000,2)
+Test data size isi (200,2)
+
+alpha given - 0.05
+
+Deciding convergence :
+
+	Final chosen convergence  - 10^-7
+	Experimented values in the range (10^-9 to 10^-2)
+
+	values from [10^-6 to 10^-2] doesn't fits the data well as observed after plotting their graphs.
+
+	value 10^-7 - gives a decent result and also doeant take much time
+
+	values < 10^-8 - take relatively more time to converge.
+
+	Thus, optimum convergence value chosen - 10^-7 
+
+All the buffer files are saves as .npy and are loaded in other parts as required.
+
+
+----------  Part 2  -------------
+
+Observations from the plots:
+	
+	for n=1 and n=2 : As expected, we didn't get a good fit because it is one and two degree polynomial
+
+	for n>3 : decent plots were observed fitting the train data
+
+
+	Miniumum train error observed for n=4
+	Maximum train error as expected observed for n=1
+
+	Reason for minimum train error at n=4:
+		
+		The curve given can't be fitted by a polynomial of degree less than 3.
+
+		The optimum polynomial to fit the data is of degree 4.
+
+----------  Part 3  -------------
+ 
+Ridge and Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression.
+
+Lasso Regression - the cost function is altered by adding a penalty equivalent to the sum of magnitude of the coefficients. However, as mentioned in the assignment we have taken penalty of summation of coefficients.
+
+Ridge Regression - the cost function is altered by adding a penalty equivalent to square of the magnitude of the coefficients.
+
+Generally, we should see a increase in train error, because we are ultimately trying not to overfit the data. But on the other hand we should see a decrease in test error. 
+
+Observations after plotting the required graphs - 
+	
+	For n=4(minimum train error) : 
+		Train :
+			Lasso - Train error almost remains same as compared to with error where no regularization is applied.
+
+			Ridge - Train error increases as compared to with error where no regularization is applied.
+
+		Test :
+			Lasso - Test error almost remains same as compared to with error where no regularization is applied.
+
+			Ridge - Test error increases as compared to with error where no regularization is applied.
+
+		Conclusion - Ridge can't be applied to this data. However, lasso too doesn't help in decreasing the test error.
+		Thus, its ok if we don't apply any regularization, because we are not overfitting the data.
+
+	For n=1(maximum train error) : 
+		Train :
+			Lasso - Train error decreases as compared to with error where no regularization is applied.
+
+			Ridge - Train error increases as compared to with error where no regularization is applied.
+
+		Test :
+			Lasso - Test error decreases as compared to with error where no regularization is applied.
+
+			Ridge - Test error increases as compared to with error where no regularization is applied.
+
+		Conclusion - We can't conclude anythong from this observation as n=1 is not a proper case to decide.

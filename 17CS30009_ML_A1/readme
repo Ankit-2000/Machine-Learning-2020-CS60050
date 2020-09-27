@@ -1,0 +1,19 @@
+Assignment 1 : Machine Learning
+
+Name - Bagde Ankit
+Roll no - 17CS30009
+
+Three files :
+part1.py	-	 Q.1 - Understanding the data and simple curve fitting
+part2.py	-	 Q.2 - Visualization of the fitted curves
+part3.py	-	 Q.3 - Regularization
+
+
+part2.py and part3.py requires some files, which are already present. However, those files can be generated again by running part1.py
+
+********Running each file**************
+python3 part1.py 		-		Stores necessary buffer files in 'part1' directory	
+python3 part2.py 		-		Uses buffer files form 'part1' directory and stores graphs in 'part2' directory
+python3 part3.py 		-		Uses buffer files form 'part1' directory and stores graphs in 'part2' directory
+
+Discussion can be found in report.txt

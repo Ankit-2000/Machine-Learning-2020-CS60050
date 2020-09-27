@@ -1,0 +1,28 @@
+Bagde Ankit  - 17CS30009
+Machine learning - Assignment 3
+
+
+"data" folder contains the required data files
+"src"  folder contains the required python files
+"cluster" folder contains the obtained clusters
+
+Running the files  - python3 file.py
+To run all files   - make run
+
+Output for part5.py
+
+NMI score for 'agglomerative.txt' is 0.0245317064464		
+NMI score for 'agglomerative_reduced.txt' is 0.0211924146380
+
+NMI score for 'kmeans.txt' is 0.3459713685726
+NMI score for 'kmeans_reduced.txt' is 0.5892108409313
+
+Additional remarks :
+
+Scikit learn is not used for generation of TF-IDF matrix
+ - Because in the assignment we are told to use idf (t) = log [ (1 + n) / (1 + df (t)) ].
+ - Scikit learn uses  idf (t) = log [ (1 + n) / (1 + df (t)) ] + 1
+
+For each part a test example is given to test the correctness of written algorithm.
+Each test example is referred from a website, the link of which is mentioned in the respective files.
+Test example can be verified by uncommenting a few lines.

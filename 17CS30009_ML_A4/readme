@@ -1,0 +1,32 @@
+Bagde Ankit  - 17CS30009
+Machine learning - Assignment 4
+
+
+"data" folder contains the required data files
+Running the files  - python3 file.py
+
+Modules definition for part1:
+
+1) Preprocess - preprocess the data, return the train and test set
+
+2) data_loader - create minibatches of 32 examples each
+
+3) weight_intializer - initialize the weights and return a dict of weights and bias of all layers 
+
+4) forward - defines a forward pass on the neural network
+
+5) Backpropogation - defines a back propogation on the neural network
+
+6) update_parameters - update parameters after backpropogation (calculating gradients)
+
+7) accuracy - predicts the output on given data and returns the accuracy
+
+8) cost_function - returns the categorical cross-entropy loss
+
+9) training - Trains the complete neural network
+
+For the number of epochs
+	for the number of mini batches
+		call forward
+		call backpropogation
+		call update parameters
